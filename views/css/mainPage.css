@@ -1,0 +1,215 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+#navigation ul {
+    display: flex;
+    float: right;
+}
+
+#navigation li {
+    margin: 22px;
+    list-style: none;
+    font-family:GungsuhChe;
+    font-weight: bold;
+}
+
+#navigation li input {
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    font-family: Bradley Hand ITC;
+    font-weight: bold;
+}
+
+#navigation li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: rgb(244, 62, 83);;
+}
+
+#logo {
+    width: 139px;
+    height: 59px;
+    margin: 5px;
+}
+
+#mainContent {
+    text-align: center;
+}
+
+#mainContent h1 {
+    padding: 25px;
+    font-family: Jokerman;
+}
+
+#mainContent p {
+    font-family: Century Gothic;
+}
+
+.allButtons {
+    width: 174px;
+    height: 31px;
+    margin: 22px;
+    border-radius: 22px;
+    background-color: rgb(115, 67, 246);
+    color: white;
+    font-family: Berlin Sans FB;
+}
+
+.allButtons:hover {
+    cursor: pointer;
+    background-color: rgb(244, 62, 83);
+}
+
+.hrSpacing{
+    margin-top: 58px;
+    margin-left: 161px;
+    margin-right: 204px;
+}
+
+.notesTable {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 2rem;
+}
+
+.popularNotes h2 {
+    text-align: center;
+    margin-top: 39px;
+    font-family: Jokerman;
+    font-size: 30px;
+}
+
+.tables {
+    margin: 60px;
+    width: 525px;
+    height: 650px;
+    border: 2px solid black;
+    border-radius: 22px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Bodoni MT;
+    font-size: 22px;
+}
+
+.tables:hover {
+    width: 530px;
+    height: 675px;
+    cursor: pointer;  
+}
+
+.tables img {
+    width: 355px;
+    height: 370px;
+    margin-top: 23px;
+    margin-bottom: 25px;
+}
+
+.h2Style {
+    margin: 45px;
+    font-family: Jokerman;
+    font-size: 30px;
+}
+
+#aboutUsPara {
+    text-align: center;
+    margin: 47px;
+    font-family: Century Gothic;
+}
+
+#contactUsHeading {
+    text-align: center;
+    margin: 51px;
+    font-family: Century Gothic;
+    font-size: 27px;
+}
+
+.contactUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contactUsForm {
+    display: flex;
+    width: 525px;
+    height: 366px;
+    border-radius: 23px;
+    text-align: center;
+    border: 2px solid black;
+    background-image: url('../images/logo/Stories-B1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contactUsForm form input {
+
+    width: 387px;
+    height: 53px;
+    margin: 23px;
+    margin-left: 44px;
+    border-radius: 8px;
+    font-family: Bradley Hand ITC;
+    font-weight: bold;
+    font-size: 17px;
+    background-color: transparent;
+
+}
+
+.contactUsForm form input:hover {
+    border: 2px solid rgb(163, 204, 247);
+}
+
+.contactUsForm form button {
+    width: 107px;
+    height: 37px;
+    border-radius: 13px;
+    font-family: Bradley Hand ITC;
+    font-weight: bold;
+    background-color: rgb(163, 204, 247);
+}
+
+.contactUsForm form button:hover {
+    cursor: pointer;
+    background-color: rgb(143, 193, 248);
+}
+
+footer h3 {
+    font-family: Batang;
+}
+
+footer p {
+    font-family: Bodoni MT;
+    font-size: 17px;
+}
+
+footer hr {
+    margin-top: 58px;
+}
+
+.footerContent {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.followUs {
+    display: flex;
+}
+
+.followUs img {
+    width: 44px;
+    height: 35px;
+    margin: 22px;
+}
+
+.followUs img:hover {
+    cursor: pointer;
+    width: 50px;
+    height: 40px;
+}
