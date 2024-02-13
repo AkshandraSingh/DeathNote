@@ -11,7 +11,7 @@ const notesSchema = new mongoose.Schema({
     },
     chapterLikes: {
         type: Number,
-        required: true,
+        default: 0,
     },
     isActive: {
         type: Boolean,
