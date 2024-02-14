@@ -67,7 +67,7 @@ module.exports = {
         }
     },
 
-    viewAllChapterNotes: async (req, res) => { // Need to also show comments 
+    viewAllChapterNotes: async (req, res) => { // ! Need to also show comments 
         try {
             const allChapterNotesData = await notesSchema.find()
             res.status(200).send({
