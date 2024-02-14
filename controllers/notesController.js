@@ -1,4 +1,5 @@
 const notesSchema = require('../models/notesModel')
+const commentsSchema = require('../models/commentModel')
 
 module.exports = {
     addChapterNotes: async (req, res) => {
@@ -67,7 +68,7 @@ module.exports = {
         }
     },
 
-    viewAllChapterNotes: async (req, res) => { // ! Need to also show comments 
+    viewAllChapterNotes: async (req, res) => {
         try {
             const allChapterNotesData = await notesSchema.find()
             res.status(200).send({
@@ -93,6 +94,34 @@ module.exports = {
             res.status(200).send({
                 success: true,
                 message: "You Like chapter!"
+            })
+        } catch (error) {
+            res.status(500).send({
+                success: false,
+                message: "Server Error",
+                error: error.message
+            })
+        }
+    },
+
+    viewChapter: async (req, res) => {
+        try {
+            const chapterId = req.params.chapterId
+            const chapterData = await notesSchema.findById(chapterId)
+            const chapterCommentsData = await commentsSchema.find({
+                chapterNotesId: chapterId
+            })
+            if (!chapterData) {
+                return res.status(401).send({
+                    success: false,
+                    message: "Chapter id is incorrect!"
+                })
+            }
+            res.status(200).send({
+                success: true,
+                message: "Chapter Data found!",
+                chapterData: chapterData,
+                chapterCommentsData: chapterCommentsData.length > 0 ? chapterCommentsData : "0 Comments"
             })
         } catch (error) {
             res.status(500).send({

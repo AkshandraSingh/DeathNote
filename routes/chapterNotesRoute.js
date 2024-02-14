@@ -10,5 +10,6 @@ chapterNotesRouter.delete('/deleteChapterNotes/:id', notesController.deleteChapt
 chapterNotesRouter.patch('/updateChapterNotes/:id', notesController.updateChapterNotes)
 chapterNotesRouter.get('/viewAllChapterNotes', notesController.viewAllChapterNotes)
 chapterNotesRouter.get('/addChapterNoteLike/:id', notesController.addChapterNoteLike)
+chapterNotesRouter.get('/viewChapter/:chapterId', notesController.viewChapter)
 
 module.exports = chapterNotesRouter
